@@ -1,0 +1,12 @@
+.buttons {
+  display: flex;
+  flex-direction: row;
+  margin-top: 100px;
+  margin-bottom: 50px;
+  justify-content: center;
+}
+.picturesButton,
+.bookNowButton,
+.activitiesButton {
+  margin-right: 100px;
+}

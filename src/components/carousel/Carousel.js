@@ -1,3 +1,4 @@
+// eslint-disable-next-line
 import styles from "react-responsive-carousel/lib/styles/carousel.min.css";
 var React = require("react");
 var Carousel = require("react-responsive-carousel").Carousel;

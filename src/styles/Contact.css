@@ -1,0 +1,17 @@
+.contact {
+  text-align: center;
+}
+/* .contactTitle {
+  align-items: center;
+  font-size: 38px;
+  font-weight: bold;
+} */
+.contactDetails {
+  margin-top: 50px;
+  font-size: 20px;
+}
+.email,
+.phoneNumber,
+.linkToVenue {
+  margin: 10px;
+}

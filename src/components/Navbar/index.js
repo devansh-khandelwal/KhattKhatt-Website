@@ -13,6 +13,9 @@ const Navbar = () => {
           <NavLink to="/about" activeStyle>
             About Camp
           </NavLink>
+          <NavLink to="/tents" activeStyle>
+            Our Tents
+          </NavLink>
           <NavLink to="/activities" activeStyle>
             Activities
           </NavLink>

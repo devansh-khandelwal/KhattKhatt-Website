@@ -1,0 +1,16 @@
+h2 {
+  text-align: center;
+}
+.activitiesTitle {
+  margin: 16px;
+}
+.activitiesButtons {
+  display: flex;
+  justify-content: center;
+}
+.bookNowButton {
+  flex-direction: row;
+}
+.photosButton {
+  flex-direction: row;
+}
