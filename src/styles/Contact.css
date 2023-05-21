@@ -1,17 +1,25 @@
-.contact {
+.contact h1 {
   text-align: center;
 }
-/* .contactTitle {
+.contact .body {
+  display: flex;
+  flex-direction: row;
+  /* border: solid 1px red; */
+  height: 50vh;
   align-items: center;
-  font-size: 38px;
-  font-weight: bold;
-} */
-.contactDetails {
-  margin-top: 50px;
-  font-size: 20px;
 }
+.contact .address,
 .email,
-.phoneNumber,
-.linkToVenue {
+.phone {
+  /* border: solid 1px red; */
+  width: 33.33%;
+  height: 100px;
+  text-align: center;
+}
+.contact .text,
+.icon,
+.subHeading {
+  /* border: solid 1px pink; */
+  color: #0047ab;
   margin: 10px;
 }
