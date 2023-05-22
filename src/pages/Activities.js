@@ -1,6 +1,7 @@
 import React from "react";
 import "../styles/Activities.css";
 import ActionAreaCard from "../components/Card";
+import Footer from "../components/Footer";
 
 const Activities = () => {
   const cardData = [
@@ -93,6 +94,9 @@ const Activities = () => {
             ))}
           </div>
         ))}
+      </div>
+      <div className="footer">
+        <Footer />
       </div>
     </div>
   );

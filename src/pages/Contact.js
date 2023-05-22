@@ -4,6 +4,7 @@ import LocationOnIcon from "@mui/icons-material/LocationOn";
 import EmailIcon from "@mui/icons-material/Email";
 import LocalPhoneRoundedIcon from "@mui/icons-material/LocalPhoneRounded";
 import { Link } from "@mui/material";
+import Footer from "../components/Footer";
 
 const Contact = () => {
   return (
@@ -47,6 +48,9 @@ const Contact = () => {
             +91 9155607067
           </div>
         </div>
+      </div>
+      <div className="footer">
+        <Footer />
       </div>
     </div>
   );

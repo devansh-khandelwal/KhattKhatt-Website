@@ -2,6 +2,7 @@ import React from "react";
 import "../styles/About.css";
 import img from "../assets/img1.jpeg";
 import firstParaImg from "../assets/img2.jpeg";
+import Footer from "../components/Footer";
 
 const firstPara =
   "Major's Camp is spread in 100 Acres.The entire premises is Army themed and each spot at Major's Camp narrates a warrior's / Army's story." +
@@ -28,6 +29,9 @@ const About = () => {
         <div className="text">
           <p>{firstPara}</p>
         </div>
+      </div>
+      <div className="footer">
+        <Footer />
       </div>
     </div>
   );
