@@ -5,11 +5,12 @@ import EmailIcon from "@mui/icons-material/Email";
 import LocalPhoneRoundedIcon from "@mui/icons-material/LocalPhoneRounded";
 import { Link } from "@mui/material";
 import Footer from "../components/Footer";
+import StickyButton from "../components/sticky_button/StickyButton";
 
 const Contact = () => {
   return (
     <div className="contact">
-      <h1>Contact Us</h1>
+      <StickyButton />
       <div className="body">
         <div className="address">
           <div className="icon">

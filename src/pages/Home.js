@@ -1,59 +1,113 @@
 import React from "react";
 import "../styles/Home.css";
+import Carousel from "../components/carousel/Carousel";
+import img1 from "../assets/images/img22.jpeg";
+import img2 from "../assets/images/img24.jpeg";
+import img3 from "../assets/images/img26.jpeg";
+import img4 from "../assets/images/img20.jpeg";
+import Footer from "../components/Footer";
+import Fade from "react-reveal/Fade";
+import StickyButton from "../components/sticky_button/StickyButton";
 
 const Home = () => {
   return (
-    <>
-      <div>
-        <h3>
-          1. As we all know how much Non-defense personnel are fond to know
-          about the complete insights of Army / Defense system. For an example
-          their training, the war insights, life contribution information, the
-          life sacrifices and the JOSH towards our country
-        </h3>
-      </div>
-      <div>
-        <h3>
-          2. We are here giving you an experience and learning to Live a
-          soldier's life for a day. (Ek Shaam Fauj Ke Naam)
-        </h3>
-      </div>
-      <div>
-        <h3>
-          3. A stay in nature away from city pollution, completely Army Themed
-        </h3>
-      </div>
-      <div>
-        <h3>
-          4. Provide authentic jungle experience ( Survival, emergency rescue,
-          barbeque , setting up tents, First Aid, firefighting, actions to be
-          taken in case of a snake bite)
-        </h3>
-      </div>
-      <div>
-        <h3>
-          5. Information of few Heroes/Martyrs whose contribution should be
-          known to every one of us but unfortunately there isn't any platform.
-          Captain Anuj Nayyar, Colonel Neelakantan Jayachandran Nair, Brigadier
-          Kuldip Singh Chandpuri., Gurbachan Singh salaria, Rifleman Jaswant
-          Singh Rawat.
-        </h3>
-      </div>
-      <div className="buttons">
-        <div className="knowMoreButton">
-          <a href="/about">
-            <button style={{ width: "100px", height: "50px" }}>
-              Know More
-            </button>
-          </a>
+    <div className="home">
+      <Fade>
+        <div className="carousel">
+          <Carousel />;
         </div>
-        <div className="bookNowButton">
-          <a href="/tents">
-            <button style={{ width: "100px", height: "50px" }}>Book Now</button>
-          </a>
+      </Fade>
+      <StickyButton />
+      <div className="body">
+        <div className="firstContainer">
+          <Fade>
+            <div className="heading">
+              <h1>Welcome to Major's Camp (Ek Shaam Fauj Ke Naam)</h1>
+            </div>
+            <div className="firstParagraph">
+              <div className="image">
+                <img src={img1} alt="" />
+              </div>
+              <div className="text">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
+                  ad minus adipisci magni ratione! Distinctio saepe praesentium
+                  obcaecati eaque tenetur, enim aperiam molestiae voluptates
+                  odio quia deserunt officia beatae dolorum adipisci nesciunt
+                  corporis suscipit esse labore corrupti iure! Reiciendis, quod?
+                </p>
+              </div>
+            </div>
+          </Fade>
+        </div>
+        <div className="secondContainer">
+          <Fade>
+            <div className="heading">
+              <h1>A day to Live a Soldier's life</h1>
+            </div>
+            <div className="secondParagraph">
+              <div className="text">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
+                  ad minus adipisci magni ratione! Distinctio saepe praesentium
+                  obcaecati eaque tenetur, enim aperiam molestiae voluptates
+                  odio quia deserunt officia beatae dolorum adipisci nesciunt
+                  corporis suscipit esse labore corrupti iure! Reiciendis, quod?
+                </p>
+              </div>
+              <div className="image">
+                <img src={img2} alt="" />
+              </div>
+            </div>
+          </Fade>
+        </div>
+        <div className="firstContainer">
+          <Fade>
+            <div className="heading">
+              <h1>Fun gets better when it teaches something</h1>
+            </div>
+            <div className="firstParagraph">
+              <div className="image">
+                <img src={img3} alt="" />
+              </div>
+              <div className="text">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
+                  ad minus adipisci magni ratione! Distinctio saepe praesentium
+                  obcaecati eaque tenetur, enim aperiam molestiae voluptates
+                  odio quia deserunt officia beatae dolorum adipisci nesciunt
+                  corporis suscipit esse labore corrupti iure! Reiciendis, quod?
+                </p>
+              </div>
+            </div>
+          </Fade>
+        </div>
+        <div className="secondContainer">
+          <Fade>
+            <div className="heading">
+              <h1>Journey of Authentic Jungle Experience Begins Here</h1>
+            </div>
+            <div className="secondParagraph">
+              <div className="text">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
+                  ad minus adipisci magni ratione! Distinctio saepe praesentium
+                  obcaecati eaque tenetur, enim aperiam molestiae voluptates
+                  odio quia deserunt officia beatae dolorum adipisci nesciunt
+                  corporis suscipit esse labore corrupti iure! Reiciendis, quod?
+                </p>
+              </div>
+              <div className="image">
+                <img src={img4} alt="" />
+              </div>
+            </div>
+          </Fade>
         </div>
       </div>
-    </>
+      <div className="footer">
+        <Footer />
+      </div>
+    </div>
   );
 };
 

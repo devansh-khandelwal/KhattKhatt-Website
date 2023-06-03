@@ -1,10 +1,81 @@
-.buttons {
+.carousel {
+  width: auto;
+  height: 100vh;
+}
+
+.home .body {
+  display: flex;
+  flex-direction: column;
+  background: #faf9f6;
+  /* background-image: url("../assets/images/background_image.jpg"); */
+}
+.home .firstContainer {
+  background: rgba(90, 118, 66, 0.5);
+  /* margin: 50px; */
+  border-radius: 5%;
+  z-index: 10px;
+  box-shadow: 5px 5px 2.5px grey;
+  margin-top: 25px;
+}
+.home .secondContainer {
+  background: rgba(42, 65, 29, 0.5);
+  /* margin: 50px; */
+  border-radius: 5%;
+  margin-top: 25px;
+  z-index: 10px;
+  box-shadow: 5px 5px 2.5px grey;
+}
+.home .heading h1 {
+  text-align: center;
+  padding-top: 40px;
+  /* color: rgba(42, 65, 29, 1); */
+}
+.home .firstParagraph {
   display: flex;
   flex-direction: row;
-  margin-top: 100px;
+  width: 95%;
+  padding: 2.5%;
+  display: flex;
+  align-items: center;
+}
+.home .secondParagraph {
+  display: flex;
+  flex-direction: row;
+  width: 95%;
+  padding: 2.5%;
+  display: flex;
+  align-items: center;
   justify-content: center;
 }
-.knowMoreButton,
-.bookNowButton {
-  margin-right: 100px;
+.home .firstParagraph .image {
+  width: 50%;
+  text-align: center;
+}
+
+.home .secondParagraph .image {
+  width: 50%;
+  text-align: center;
+}
+
+.home .firstParagraph .image img {
+  border-radius: 5%;
+  width: 50%;
+}
+
+.home .secondParagraph .image img {
+  border-radius: 5%;
+  width: 50%;
+}
+
+.home .firstParagraph .text,
+.home .secondParagraph .text {
+  width: 40%;
+  font-size: 1.4rem;
+  padding-top: 10px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: left;
+  /* color: rgba(76, 93, 52, 1); */
+}
+.footer {
+  margin-top: 25px;
 }

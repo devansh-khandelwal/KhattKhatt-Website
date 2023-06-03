@@ -7,6 +7,7 @@ import Box from "@material-ui/core/Box";
 import Typography from "@material-ui/core/Typography";
 import IconButton from "@material-ui/core/IconButton";
 import Avatar from "@material-ui/core/Avatar";
+import { Link } from "@mui/material";
 
 import RoomIcon from "@material-ui/icons/Room";
 import PhoneIcon from "@material-ui/icons/Phone";
@@ -49,13 +50,22 @@ export default function Contact(props) {
   };
 
   return (
-    <Card style={{ marginTop: "100px" }}>
-      <hr />
+    <Card
+      style={{
+        background: "rgb(80,96,44,0.8)",
+        paddingLeft: "100px",
+      }}
+    >
       <Container maxWidth="lg">
         <Box py={5}>
           <Grid container spacing={6}>
             <Grid item xs={12} md={4}>
-              <Typography variant="h6" component="h2" gutterBottom={true}>
+              <Typography
+                variant="h6"
+                component="h2"
+                gutterBottom={true}
+                style={{ fontWeight: "bold" }}
+              >
                 {content["header"]}
               </Typography>
               <Typography
@@ -75,7 +85,11 @@ export default function Contact(props) {
                     </Avatar>
                   </div>
                   <Box ml={2}>
-                    <Typography variant="h6" gutterBottom={true}>
+                    <Typography
+                      variant="h6"
+                      gutterBottom={true}
+                      style={{ fontWeight: "bold" }}
+                    >
                       {content["contact1"]}
                     </Typography>
                     <Typography variant="body2" color="textSecondary">
@@ -93,18 +107,39 @@ export default function Contact(props) {
                     </Avatar>
                   </div>
                   <Box ml={2}>
-                    <Typography variant="h6" gutterBottom={true}>
+                    <Typography
+                      variant="h6"
+                      gutterBottom={true}
+                      style={{ fontWeight: "bold" }}
+                    >
                       {content["contact2"]}
                     </Typography>
-                    <Typography variant="body2" color="textSecondary">
+                    <Link
+                      href="mailto:customercare@majorscamp.com"
+                      variant="body2"
+                      color="textSecondary"
+                      style={{ textDecoration: "none" }}
+                    >
                       {content["contact2-desc1"]}
-                    </Typography>
-                    <Typography variant="body2" color="textSecondary">
+                    </Link>
+                    <br />
+                    <Link
+                      href="mailto:Booking@majorscamp.com"
+                      variant="body2"
+                      color="textSecondary"
+                      style={{ textDecoration: "none" }}
+                    >
                       {content["contact2-desc2"]}
-                    </Typography>
-                    <Typography variant="body2" color="textSecondary">
+                    </Link>
+                    <br />
+                    <Link
+                      href="mailto:Help@majorscamp.com"
+                      variant="body2"
+                      color="textSecondary"
+                      style={{ textDecoration: "none" }}
+                    >
                       {content["contact2-desc3"]}
-                    </Typography>
+                    </Link>
                   </Box>
                 </Box>
               </div>
@@ -117,7 +152,11 @@ export default function Contact(props) {
                   </Avatar>
                 </div>
                 <Box ml={2}>
-                  <Typography variant="h6" gutterBottom={true}>
+                  <Typography
+                    variant="h6"
+                    gutterBottom={true}
+                    style={{ fontWeight: "bold" }}
+                  >
                     {content["contact3"]}
                   </Typography>
                   <IconButton href="#" color="inherit">
@@ -138,19 +177,43 @@ export default function Contact(props) {
                   </Avatar>
                 </div>
                 <Box ml={2}>
-                  <Typography variant="h6" gutterBottom={true}>
+                  <Typography
+                    variant="h6"
+                    gutterBottom={true}
+                    style={{ fontWeight: "bold" }}
+                  >
                     {content["contact4"]}
                   </Typography>
-                  <Typography variant="body2" color="textSecondary">
+                  <Link
+                    href="tel:6362147935"
+                    variant="body2"
+                    color="textSecondary"
+                    style={{ textDecoration: "none" }}
+                  >
                     {content["contact4-desc1"]}
-                  </Typography>
-                  <Typography variant="body2" color="textSecondary">
-                    {content["contact4-desc2"]}
-                  </Typography>
+                  </Link>
+                  <br />
+                  <Link
+                    href="tel:9155607067"
+                    variant="body2"
+                    color="textSecondary"
+                    style={{ textDecoration: "none" }}
+                  >
+                    {content["contact4-desc1"]}
+                  </Link>
                 </Box>
               </Box>
             </Grid>
           </Grid>
+          <Typography
+            style={{
+              textAlign: "center",
+              marginTop: "30px",
+              marginBottom: "-10px",
+            }}
+          >
+            Powered by – KhattKhattHospitality India Pvt. Ltd
+          </Typography>
         </Box>
       </Container>
     </Card>

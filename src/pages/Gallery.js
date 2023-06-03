@@ -1,18 +1,27 @@
-import React from "react";
+import { PhotoProvider, PhotoView } from "react-photo-view";
+import "react-photo-view/dist/react-photo-view.css";
+import "../styles/Gallery.css";
 
-const Gallery = () => {
+function importAll(r) {
+  return r.keys().map(r);
+}
+
+const images = importAll(
+  require.context("../assets/images", false, /\.(png|jpe?g|svg)$/)
+);
+
+function App() {
   return (
-    <div
-      style={{
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-        height: "100vh",
-      }}
-    >
-      <h1>Gallery</h1>
-    </div>
+    <PhotoProvider>
+      <div className="foo">
+        {images.map((item, index) => (
+          <PhotoView key={index} src={item} scaleMode="actual">
+            <img src={item} alt="" />
+          </PhotoView>
+        ))}
+      </div>
+    </PhotoProvider>
   );
-};
+}
 
-export default Gallery;
+export default App;

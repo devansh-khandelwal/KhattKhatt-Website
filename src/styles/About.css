@@ -3,32 +3,31 @@
   width: 100%;
   object-fit: cover;
 }
-.heading h1 {
+.about .heading h1 {
   text-align: center;
   margin: 40px;
 }
-.firstParagraph {
+.about .firstParagraph {
   display: flex;
   flex-direction: row;
   width: 95%;
   margin: 2.5%;
 }
-.firstParagraph .image {
-  /* border: solid red 1px; */
+.about .firstParagraph .image {
   width: 50%;
   text-align: center;
 }
 
-.firstParagraph .image img {
-  border-radius: 50%;
+.about .firstParagraph .image img {
+  border-radius: 10%;
   width: 80%;
 }
 
-.firstParagraph .text {
-  /* border: green solid 1px; */
+.about .firstParagraph .text {
   width: 50%;
   font-size: 1.2rem;
   padding-top: 10px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  text-align: center;
+  text-align: left;
+  padding-bottom: 100px;
 }

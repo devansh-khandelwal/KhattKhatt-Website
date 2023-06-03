@@ -1,12 +1,24 @@
 import React from "react";
 import { Nav, NavLink, Bars, NavMenu } from "./NavbarElements";
+import logo from "../../assets/logo/logo1.png";
 
 const Navbar = () => {
   return (
     <Nav>
       <Bars />
       <NavMenu>
-        <NavLink to="/home" activeStyle>
+        <NavLink>
+          <img
+            src={logo}
+            alt="logo"
+            style={{
+              objectFit: "cover",
+              width: "100%",
+              height: "100%",
+            }}
+          />
+        </NavLink>
+        <NavLink to="/" activeStyle>
           Home
         </NavLink>
         <NavLink to="/about" activeStyle>
@@ -19,10 +31,7 @@ const Navbar = () => {
           Activities
         </NavLink>
         <NavLink to="/gallery" activeStyle>
-          Gallery/Museum
-        </NavLink>
-        <NavLink to="/contact" activeStyle>
-          Contact Us
+          Gallery
         </NavLink>
       </NavMenu>
     </Nav>

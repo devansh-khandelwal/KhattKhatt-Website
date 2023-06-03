@@ -1,5 +1,12 @@
 // eslint-disable-next-line
 import styles from "react-responsive-carousel/lib/styles/carousel.min.css";
+import img1 from "../../assets/cropped_images/img18-cropped.jpg";
+import img2 from "../../assets/images/img6.jpeg";
+import img3 from "../../assets/cropped_images/img12-cropped.jpg";
+import img4 from "../../assets/cropped_images/img19-cropped.jpg";
+import img5 from "../../assets/cropped_images/img16-cropped.jpg";
+import img6 from "../../assets/cropped_images/img14-cropped.jpg";
+
 var React = require("react");
 var Carousel = require("react-responsive-carousel").Carousel;
 
@@ -13,40 +20,22 @@ function DemoCarousel() {
       showIndicators={false}
     >
       <div>
-        <img
-          src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/GoldenGateBridge-001.jpg/1200px-GoldenGateBridge-001.jpg"
-          alt=""
-        />
+        <img src={img1} alt="" />
       </div>
       <div>
-        <img
-          src="https://cdn.britannica.com/s:800x450,c:crop/35/204435-138-2F2B745A/Time-lapse-hyper-lapse-Isle-Skye-Scotland.jpg"
-          alt=""
-        />
+        <img src={img2} alt="" />
       </div>
       <div>
-        <img
-          src="https://static2.tripoto.com/media/filter/tst/img/735873/TripDocument/1537686560_1537686557954.jpg"
-          alt=""
-        />
+        <img src={img3} alt="" />
       </div>
       <div>
-        <img
-          src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Palace_of_Fine_Arts_%2816794p%29.jpg/1200px-Palace_of_Fine_Arts_%2816794p%29.jpg"
-          alt=""
-        />
+        <img src={img4} alt="" />
       </div>
       <div>
-        <img
-          src="https://i.natgeofe.com/n/f7732389-a045-402c-bf39-cb4eda39e786/scotland_travel_4x3.jpg"
-          alt=""
-        />
+        <img src={img5} alt="" />
       </div>
       <div>
-        <img
-          src="https://www.tusktravel.com/blog/wp-content/uploads/2020/07/Best-Time-to-Visit-Darjeeling-for-Honeymoon.jpg"
-          alt=""
-        />
+        <img src={img6} alt="" />
       </div>
     </Carousel>
   );
