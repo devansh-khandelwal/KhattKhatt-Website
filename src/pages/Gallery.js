@@ -1,6 +1,7 @@
 import { PhotoProvider, PhotoView } from "react-photo-view";
 import "react-photo-view/dist/react-photo-view.css";
 import "../styles/Gallery.css";
+import Footer from "../components/Footer";
 
 function importAll(r) {
   return r.keys().map(r);
@@ -12,15 +13,20 @@ const images = importAll(
 
 function App() {
   return (
-    <PhotoProvider>
-      <div className="foo">
-        {images.map((item, index) => (
-          <PhotoView key={index} src={item} scaleMode="actual">
-            <img src={item} alt="" />
-          </PhotoView>
-        ))}
+    <>
+      <PhotoProvider>
+        <div className="foo">
+          {images.map((item, index) => (
+            <PhotoView key={index} src={item} scaleMode="actual">
+              <img src={item} alt="" />
+            </PhotoView>
+          ))}
+        </div>
+      </PhotoProvider>
+      <div className="footer">
+        <Footer />
       </div>
-    </PhotoProvider>
+    </>
   );
 }
 
