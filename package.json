@@ -1,6 +1,7 @@
 {
   "name": "khattkhatt-website",
   "version": "0.1.0",
+  "homepage": "https://devansh-khandelwal.github.io/KhattKhatt-Website",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.11.0",
@@ -26,6 +27,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -50,6 +53,7 @@
     ]
   },
   "devDependencies": {
-    "@auto-it/gh-pages": "^10.46.0"
+    "@auto-it/gh-pages": "^10.46.0",
+    "gh-pages": "^5.0.0"
   }
 }

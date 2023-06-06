@@ -1,6 +1,16 @@
 .stickyButton {
   position: fixed;
-  bottom: 20px;
-  right: 30px;
+  bottom: 30px;
+  right: 50px;
   z-index: 1;
+}
+.stickyButton img {
+  width: 130px;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+}
+.stickyButton :hover {
+  width: 140px;
+  height: auto;
 }
