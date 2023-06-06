@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;700&display=swap");
 .carousel {
   width: auto;
   height: 100vh;
@@ -28,6 +29,7 @@
 .home .heading h1 {
   text-align: center;
   padding-top: 40px;
+  font-family: "Titillium Web", sans-serif;
   /* color: rgba(42, 65, 29, 1); */
 }
 .home .firstParagraph {
