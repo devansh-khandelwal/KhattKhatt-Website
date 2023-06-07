@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/KhattKhatt-Website/static/css/main.199406cc.css",
-    "main.js": "/KhattKhatt-Website/static/js/main.a5af9a0e.js",
+    "main.css": "/KhattKhatt-Website/static/css/main.faaf0b48.css",
+    "main.js": "/KhattKhatt-Website/static/js/main.8041f038.js",
     "static/media/img8.png": "/KhattKhatt-Website/static/media/img8.37743f65cb47e1d3287a.png",
     "static/media/img33.jpg": "/KhattKhatt-Website/static/media/img33.4fd177091778d8d80841.jpg",
     "static/media/img17.jpg": "/KhattKhatt-Website/static/media/img17.2f984adbc6b816bebffe.jpg",
@@ -35,17 +35,18 @@
     "static/media/img27.jpeg": "/KhattKhatt-Website/static/media/img27.8f420618962224e45948.jpeg",
     "static/media/logo1.png": "/KhattKhatt-Website/static/media/logo1.5667c826abdf923190ae.png",
     "static/media/img6.jpeg": "/KhattKhatt-Website/static/media/img6.af4cd04545ddb2c8c548.jpeg",
+    "static/media/logo2.png": "/KhattKhatt-Website/static/media/logo2.17dc2331d0cf3ce75f70.png",
     "static/media/img24.jpeg": "/KhattKhatt-Website/static/media/img24.ff184975532ac441c4ca.jpeg",
     "static/media/img1.jpeg": "/KhattKhatt-Website/static/media/img1.aa52d8c88934acaf5ce0.jpeg",
     "static/media/img21.jpeg": "/KhattKhatt-Website/static/media/img21.a973b0127e4f5f432157.jpeg",
     "static/media/img20.jpeg": "/KhattKhatt-Website/static/media/img20.d428d76170675eb6c929.jpeg",
     "static/media/img25.jpeg": "/KhattKhatt-Website/static/media/img25.0aa005cccade328292eb.jpeg",
     "index.html": "/KhattKhatt-Website/index.html",
-    "main.199406cc.css.map": "/KhattKhatt-Website/static/css/main.199406cc.css.map",
-    "main.a5af9a0e.js.map": "/KhattKhatt-Website/static/js/main.a5af9a0e.js.map"
+    "main.faaf0b48.css.map": "/KhattKhatt-Website/static/css/main.faaf0b48.css.map",
+    "main.8041f038.js.map": "/KhattKhatt-Website/static/js/main.8041f038.js.map"
   },
   "entrypoints": [
-    "static/css/main.199406cc.css",
-    "static/js/main.a5af9a0e.js"
+    "static/css/main.faaf0b48.css",
+    "static/js/main.8041f038.js"
   ]
 }
