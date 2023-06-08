@@ -12,11 +12,11 @@ function App() {
     <Router>
       <Navbar />
       <Routes>
-        <Route path="KhattKhatt-Website/" exact element={<Home />} />
-        <Route path="KhattKhatt-Website/about" element={<About />} />
-        <Route path="KhattKhatt-Website/tents" element={<Tents />} />
-        <Route path="KhattKhatt-Website/activities" element={<Activities />} />
-        <Route path="KhattKhatt-Website/gallery" element={<Gallery />} />
+        <Route path="/" exact element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/tents" element={<Tents />} />
+        <Route path="/activities" element={<Activities />} />
+        <Route path="/gallery" element={<Gallery />} />
       </Routes>
     </Router>
   );

@@ -16,11 +16,11 @@ function Navbar() {
         <img src={logo} alt="" />
       </a>
       <nav ref={navRef}>
-        <a href="/KhattKhatt-Website/">Home</a>
-        <a href="/KhattKhatt-Website/about">About Camp</a>
-        <a href="/KhattKhatt-Website/tents">Our Tents</a>
-        <a href="/KhattKhatt-Website/activities">Activities</a>
-        <a href="/KhattKhatt-Website/gallery">Gallery</a>
+        <a href="/">Home</a>
+        <a href="/about">About Camp</a>
+        <a href="/tents">Our Tents</a>
+        <a href="/activities">Activities</a>
+        <a href="/gallery">Gallery</a>
         <button className="nav-btn nav-close-btn" onClick={showNavbar}>
           <FaTimes />
         </button>
