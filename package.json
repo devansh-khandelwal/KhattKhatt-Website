@@ -54,5 +54,9 @@
   "devDependencies": {
     "@auto-it/gh-pages": "^10.46.0",
     "gh-pages": "^5.0.0"
+  },
+  "peerDependencies": {
+    "@babel/core": "^7.0.0",
+    "react": ">=16.8.0"
   }
 }
