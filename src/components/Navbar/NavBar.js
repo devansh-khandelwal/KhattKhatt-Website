@@ -1,13 +1,18 @@
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import "./NavBar.css";
-import logo from "../../assets/logo/logo1.png";
+import logo from "../../assets/logo/logo1_without_bg.png";
 
 function Navbar() {
   const navRef = useRef();
+  const [selectedLink, setSelectedLink] = useState("");
 
   const showNavbar = () => {
     navRef.current.classList.toggle("responsive_nav");
+  };
+
+  const handleLinkClick = (link) => {
+    setSelectedLink(link);
   };
 
   return (
@@ -16,11 +21,41 @@ function Navbar() {
         <img src={logo} alt="" />
       </a>
       <nav ref={navRef}>
-        <a href="/">Home</a>
-        <a href="/about">About Camp</a>
-        <a href="/tents">Our Tents</a>
-        <a href="/activities">Activities</a>
-        <a href="/gallery">Gallery</a>
+        <a
+          href="/"
+          className={selectedLink === "home" ? "active" : ""}
+          onClick={() => handleLinkClick("home")}
+        >
+          Home
+        </a>
+        <a
+          href="/about"
+          className={selectedLink === "about" ? "active" : ""}
+          onClick={() => handleLinkClick("about")}
+        >
+          About Camp
+        </a>
+        <a
+          href="/tents"
+          className={selectedLink === "tents" ? "active" : ""}
+          onClick={() => handleLinkClick("tents")}
+        >
+          Our Tents
+        </a>
+        <a
+          href="/activities"
+          className={selectedLink === "activities" ? "active" : ""}
+          onClick={() => handleLinkClick("activities")}
+        >
+          Activities
+        </a>
+        <a
+          href="/gallery"
+          className={selectedLink === "gallery" ? "active" : ""}
+          onClick={() => handleLinkClick("gallery")}
+        >
+          Gallery
+        </a>
         <button className="nav-btn nav-close-btn" onClick={showNavbar}>
           <FaTimes />
         </button>

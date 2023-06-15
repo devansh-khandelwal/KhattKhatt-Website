@@ -5,6 +5,8 @@
   width: auto;
   height: 100vh;
   opacity: 0.6;
+  margin-top: -75px;
+  z-index: -100;
 }
 
 .home .mainHeading {

@@ -13,11 +13,12 @@ var Carousel = require("react-responsive-carousel").Carousel;
 function DemoCarousel() {
   return (
     <Carousel
-      showArrows={true}
+      showArrows={false}
       autoPlay={true}
       infiniteLoop={true}
       showThumbs={false}
       showIndicators={false}
+      showStatus={false}
     >
       <div>
         <img src={img1} alt="" />

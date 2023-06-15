@@ -82,9 +82,6 @@ const Activities = () => {
   return (
     <div className="activities">
       <StickyButton />
-      <Reveal bottom>
-        <h1>Activities</h1>
-      </Reveal>
       <div className="body">
         {rows.map((row, rowIndex) => (
           <div key={rowIndex} className="row">

@@ -16,7 +16,6 @@ function App() {
   return (
     <div className="gallery">
       <Reveal bottom>
-        <h1>Photos</h1>
         <PhotoProvider>
           <div className="foo">
             {images.map((item, index) => (
