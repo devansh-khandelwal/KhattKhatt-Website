@@ -1,7 +1,6 @@
 import React from "react";
 import "../styles/Home.css";
 import Carousel from "../components/carousel/Carousel";
-import img1 from "../assets/images/img22.jpeg";
 import img2 from "../assets/images/img24.jpeg";
 import img3 from "../assets/images/img26.jpeg";
 import img4 from "../assets/images/img20.jpeg";
@@ -18,28 +17,11 @@ const Home = () => {
         </div>
       </Fade>
       <StickyButton />
+      <div className="mainHeading">
+        <h1>Welcome to Major's Camp</h1>
+        <h2>(Ek Shaam Fauj Ke Naam)</h2>
+      </div>
       <div className="body">
-        <div className="firstContainer">
-          <Fade>
-            <div className="heading">
-              <h1>Welcome to Major's Camp (Ek Shaam Fauj Ke Naam)</h1>
-            </div>
-            <div className="firstParagraph">
-              <div className="image">
-                <img src={img1} alt="" />
-              </div>
-              <div className="text">
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
-                  ad minus adipisci magni ratione! Distinctio saepe praesentium
-                  obcaecati eaque tenetur, enim aperiam molestiae voluptates
-                  odio quia deserunt officia beatae dolorum adipisci nesciunt
-                  corporis suscipit esse labore corrupti iure! Reiciendis, quod?
-                </p>
-              </div>
-            </div>
-          </Fade>
-        </div>
         <div className="secondContainer">
           <Fade>
             <div className="heading">

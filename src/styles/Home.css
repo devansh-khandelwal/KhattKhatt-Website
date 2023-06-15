@@ -1,18 +1,29 @@
 @import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+
 .carousel {
   width: auto;
   height: 100vh;
+  opacity: 0.6;
+}
+
+.home .mainHeading {
+  position: absolute;
+  top: 40vh;
+  right: 340px;
+  font-size: x-large;
+  color: #023020;
+  font-family: "Rubik", sans-serif;
+  text-align: center;
 }
 
 .home .body {
   display: flex;
   flex-direction: column;
   background: #faf9f6;
-  /* background-image: url("../assets/images/background_image.jpg"); */
 }
 .home .firstContainer {
   background: rgba(90, 118, 66, 0.5);
-  /* margin: 50px; */
   border-radius: 5%;
   z-index: 10px;
   box-shadow: 5px 5px 2.5px grey;
@@ -20,7 +31,6 @@
 }
 .home .secondContainer {
   background: rgba(42, 65, 29, 0.5);
-  /* margin: 50px; */
   border-radius: 5%;
   margin-top: 25px;
   z-index: 10px;
@@ -30,7 +40,7 @@
   text-align: center;
   padding-top: 40px;
   font-family: "Titillium Web", sans-serif;
-  /* color: rgba(42, 65, 29, 1); */
+  color: #023020;
 }
 .home .firstParagraph {
   display: flex;
@@ -39,15 +49,19 @@
   padding: 2.5%;
   display: flex;
   align-items: center;
+  color: #282c35;
 }
 .home .secondParagraph {
   display: flex;
   flex-direction: row;
   width: 95%;
   padding: 2.5%;
+  padding-left: 3%;
+  margin-left: 4%;
   display: flex;
   align-items: center;
   justify-content: center;
+  color: #282c35;
 }
 .home .firstParagraph .image {
   width: 50%;
@@ -74,9 +88,8 @@
   width: 40%;
   font-size: 1.4rem;
   padding-top: 10px;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Rubik", sans-serif;
   text-align: left;
-  /* color: rgba(76, 93, 52, 1); */
 }
 .footer {
   margin-top: 25px;

@@ -1,25 +1,26 @@
 import React from "react";
 import Card from "@mui/material/Card";
+import { ThemeProvider } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import Container from "@material-ui/core/Container";
 import Grid from "@material-ui/core/Grid";
 import Box from "@material-ui/core/Box";
 import Typography from "@material-ui/core/Typography";
 import IconButton from "@material-ui/core/IconButton";
-import Avatar from "@material-ui/core/Avatar";
 import { Link } from "@mui/material";
-
+import { createTheme } from "@mui/material/styles";
+import FacebookIcon from "@material-ui/icons/Facebook";
+import TwitterIcon from "@material-ui/icons/Twitter";
+import LinkedInIcon from "@material-ui/icons/LinkedIn";
+import Avatar from "@material-ui/core/Avatar";
 import RoomIcon from "@material-ui/icons/Room";
 import PhoneIcon from "@material-ui/icons/Phone";
 import EmailIcon from "@material-ui/icons/Email";
 import WebAssetIcon from "@material-ui/icons/WebAsset";
-import FacebookIcon from "@material-ui/icons/Facebook";
-import TwitterIcon from "@material-ui/icons/Twitter";
-import LinkedInIcon from "@material-ui/icons/LinkedIn";
 
 const useStyles = makeStyles((theme) => ({
   iconWrapper: {
-    backgroundColor: theme.palette.background.emphasis,
+    backgroundColor: "#023020",
   },
   midColumn: {
     [theme.breakpoints.up("md")]: {
@@ -27,6 +28,17 @@ const useStyles = makeStyles((theme) => ({
     },
   },
 }));
+
+const theme = createTheme({
+  palette: {
+    primary: {
+      main: "#01140e",
+    },
+    secondary: {
+      main: "rgb(25,25,25",
+    },
+  },
+});
 
 export default function Contact(props) {
   const classes = useStyles();
@@ -64,7 +76,7 @@ export default function Contact(props) {
                 variant="h6"
                 component="h2"
                 gutterBottom={true}
-                style={{ fontWeight: "bold" }}
+                style={{ fontWeight: "bold", color: "#023020" }}
               >
                 {content["header"]}
               </Typography>
@@ -81,14 +93,14 @@ export default function Contact(props) {
                 <Box display="flex" mb={3}>
                   <div>
                     <Avatar className={classes.iconWrapper}>
-                      <RoomIcon color="primary" fontSize="small" />
+                      <RoomIcon fontSize="small" sx={{ color: "#023020" }} />
                     </Avatar>
                   </div>
                   <Box ml={2}>
                     <Typography
                       variant="h6"
                       gutterBottom={true}
-                      style={{ fontWeight: "bold" }}
+                      style={{ fontWeight: "bold", color: "#023020" }}
                     >
                       {content["contact1"]}
                     </Typography>
@@ -103,14 +115,14 @@ export default function Contact(props) {
                 <Box display="flex">
                   <div>
                     <Avatar className={classes.iconWrapper}>
-                      <EmailIcon color="primary" fontSize="small" />
+                      <EmailIcon fontSize="small" sx={{ color: "#023020" }} />
                     </Avatar>
                   </div>
                   <Box ml={2}>
                     <Typography
                       variant="h6"
                       gutterBottom={true}
-                      style={{ fontWeight: "bold" }}
+                      style={{ fontWeight: "bold", color: "#023020" }}
                     >
                       {content["contact2"]}
                     </Typography>
@@ -148,39 +160,41 @@ export default function Contact(props) {
               <Box display="flex" mb={3}>
                 <div>
                   <Avatar className={classes.iconWrapper}>
-                    <WebAssetIcon color="primary" fontSize="small" />
+                    <WebAssetIcon fontSize="small" sx={{ color: "#023020" }} />
                   </Avatar>
                 </div>
                 <Box ml={2}>
                   <Typography
                     variant="h6"
                     gutterBottom={true}
-                    style={{ fontWeight: "bold" }}
+                    style={{ fontWeight: "bold", color: "#023020" }}
                   >
                     {content["contact3"]}
                   </Typography>
-                  <IconButton href="#" color="inherit">
-                    <FacebookIcon />
-                  </IconButton>
-                  <IconButton href="#" color="inherit">
-                    <TwitterIcon />
-                  </IconButton>
-                  <IconButton href="#" color="inherit">
-                    <LinkedInIcon />
-                  </IconButton>
+                  <ThemeProvider theme={theme}>
+                    <IconButton href="#" color="primary">
+                      <FacebookIcon />
+                    </IconButton>
+                    <IconButton href="#" color="primary">
+                      <TwitterIcon />
+                    </IconButton>
+                    <IconButton href="#" color="primary">
+                      <LinkedInIcon />
+                    </IconButton>
+                  </ThemeProvider>
                 </Box>
               </Box>
-              <Box display="flex">
+              <Box display="flex" style={{ marginTop: "-20px" }}>
                 <div>
                   <Avatar className={classes.iconWrapper}>
-                    <PhoneIcon color="primary" fontSize="small" />
+                    <PhoneIcon fontSize="small" sx={{ color: "#023020" }} />
                   </Avatar>
                 </div>
                 <Box ml={2}>
                   <Typography
                     variant="h6"
                     gutterBottom={true}
-                    style={{ fontWeight: "bold" }}
+                    style={{ fontWeight: "bold", color: "#023020" }}
                   >
                     {content["contact4"]}
                   </Typography>
@@ -210,9 +224,10 @@ export default function Contact(props) {
               textAlign: "center",
               marginTop: "30px",
               marginBottom: "-10px",
+              color: "#023020",
             }}
           >
-            Powered by – KhattKhattHospitality India Pvt. Ltd
+            Powered by – KhattKhatt Hospitality India Pvt. Ltd
           </Typography>
         </Box>
       </Container>
