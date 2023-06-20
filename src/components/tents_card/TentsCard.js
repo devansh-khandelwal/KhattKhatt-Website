@@ -3,7 +3,7 @@ import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
-import { CardActionArea, CardActions, Button } from "@mui/material";
+import { CardActionArea, CardActions } from "@mui/material";
 
 export default function TentsCard({ img, title, content }) {
   return (
@@ -13,9 +13,18 @@ export default function TentsCard({ img, title, content }) {
         marginRight: "10px",
         marginLeft: "10px",
         background: "rgba(164,170,136,0.2)",
+        display: "flex",
+        flexDirection: "column", // Display children in a column
+        alignItems: "center",
       }}
     >
-      <CardActionArea>
+      <CardActionArea
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+        }}
+      >
         <CardMedia component="img" height="140" image={img} content={content} />
         <CardContent>
           <Typography
@@ -32,14 +41,33 @@ export default function TentsCard({ img, title, content }) {
         </CardContent>
       </CardActionArea>
       <CardActions sx={{ justifyContent: "center", paddingBottom: "10px" }}>
-        <Button
-          size="small"
-          color="primary"
-          style={{ margin: "0 auto", display: "flex" }}
-          variant="contained"
+        <button
+          style={{
+            padding: "8px 16px",
+            backgroundColor: "#1976d2",
+            color: "white",
+            border: "none",
+            borderRadius: "4px",
+            cursor: "pointer",
+            transition: "background-color 0.3s",
+          }}
+          // Hover state
+          onMouseOver={(e) => {
+            e.target.style.backgroundColor = "#1565c0";
+          }}
+          onMouseOut={(e) => {
+            e.target.style.backgroundColor = "#1976d2";
+          }}
+          // Active state
+          onMouseDown={(e) => {
+            e.target.style.backgroundColor = "#0d47a1";
+          }}
+          onMouseUp={(e) => {
+            e.target.style.backgroundColor = "#1565c0";
+          }}
         >
           Book Now
-        </Button>
+        </button>
       </CardActions>
     </Card>
   );

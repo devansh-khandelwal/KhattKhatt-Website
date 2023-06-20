@@ -36,6 +36,7 @@ const content1 = () => {
       <br />
       <br />
       <br />
+      <br />
     </>
   );
 };
@@ -56,6 +57,7 @@ const content2 = () => {
       <li>Hot Water Availability</li>
       <li>Parking</li>
       <li>Bring your own toiletries</li>
+      <br />
       <br />
       <br />
       <br />
@@ -88,6 +90,7 @@ const content3 = () => {
       <br />
       <br />
       <br />
+      <br />
     </>
   );
 };
@@ -109,6 +112,7 @@ const content4 = () => {
       <li>Hot Water Availability</li>
       <li>Parking</li>
       <li>Bring your own toiletries</li>
+      <br />
       <br />
       <br />
       <br />

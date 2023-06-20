@@ -9,9 +9,21 @@ export default function ActionAreaCard({ img, title, text }) {
   return (
     <Card
       sx={{}}
-      style={{ margin: "15px", background: "rgba(164,170,136,0.2)" }}
+      style={{
+        margin: "15px",
+        background: "rgba(164,170,136,0.2)",
+        display: "flex",
+        flexDirection: "column", // Display children in a column
+        alignItems: "center", // Center align horizontally
+      }}
     >
-      <CardActionArea>
+      <CardActionArea
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+        }}
+      >
         <CardMedia component="img" height="200" image={img} />
         <CardContent>
           <Typography gutterBottom variant="h5" component="div">
