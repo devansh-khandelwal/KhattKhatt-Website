@@ -18,6 +18,8 @@ import PhoneIcon from "@material-ui/icons/Phone";
 import EmailIcon from "@material-ui/icons/Email";
 import WebAssetIcon from "@material-ui/icons/WebAsset";
 
+import "./Footer.css";
+
 const useStyles = makeStyles((theme) => ({
   iconWrapper: {
     backgroundColor: "#023020",
@@ -67,10 +69,11 @@ export default function Contact(props) {
         background: "rgb(80,96,44,0.8)",
         paddingLeft: "100px",
       }}
+      className="footerCard"
     >
       <Container maxWidth="lg">
         <Box py={5}>
-          <Grid container spacing={6}>
+          <Grid container spacing={0}>
             <Grid item xs={12} md={4}>
               <Typography
                 variant="h6"
@@ -157,7 +160,7 @@ export default function Contact(props) {
               </div>
             </Grid>
             <Grid item xs={12} sm={6} md={4}>
-              <Box display="flex" mb={3}>
+              <Box display="flex" mb={3} className="socialMediaBox">
                 <div>
                   <Avatar className={classes.iconWrapper}>
                     <WebAssetIcon fontSize="small" sx={{ color: "#023020" }} />
@@ -225,7 +228,9 @@ export default function Contact(props) {
               marginTop: "30px",
               marginBottom: "-10px",
               color: "#023020",
+              fontSize: "1.1rem",
             }}
+            className="lastLine"
           >
             Powered by – KhattKhatt Hospitality India Pvt. Ltd
           </Typography>

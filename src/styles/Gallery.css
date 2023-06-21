@@ -2,7 +2,7 @@
 .foo {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 15px;
+  margin: 15px 0px 30px 5px;
 }
 
 .foo img {
@@ -14,4 +14,13 @@
   text-align: center;
   font-family: "Titillium Web", sans-serif;
   margin: 10px;
+}
+
+@media screen and (max-width: 576px) {
+  .foo {
+    margin: 15px 5px 30px 5px !important;
+  }
+  .foo img {
+    width: 50% !important;
+  }
 }

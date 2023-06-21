@@ -5,10 +5,18 @@ import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import { CardActionArea, CardActions } from "@mui/material";
 
+import "./TentsCard.css";
+
 export default function TentsCard({ img, title, content }) {
   return (
     <Card
-      sx={{ maxWidth: "25%", height: "auto" }}
+      sx={{
+        maxWidth: "25%",
+        height: "auto",
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "space-between", // Adjust vertical spacing
+      }}
       style={{
         marginRight: "10px",
         marginLeft: "10px",
@@ -17,6 +25,7 @@ export default function TentsCard({ img, title, content }) {
         flexDirection: "column", // Display children in a column
         alignItems: "center",
       }}
+      className="tentsCard"
     >
       <CardActionArea
         style={{

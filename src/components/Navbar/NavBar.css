@@ -23,7 +23,7 @@ header {
   background-color: transparent;
   z-index: 100;
   color: var(--textColor);
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 0px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 0px 0px 0 rgba(0, 0, 0, 0.19);
 }
 
 header img {
@@ -57,7 +57,7 @@ header .nav-btn {
   color: var(--textColor);
   visibility: hidden;
   opacity: 0;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
 }
 
 header div,
@@ -89,6 +89,7 @@ nav {
 
   header .responsive_nav {
     transform: translateY(100vh);
+    z-index: 100;
   }
 
   nav .nav-close-btn {
@@ -99,5 +100,25 @@ nav {
 
   nav a {
     font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  header {
+    height: 50px;
+  }
+  header img {
+    width: 60px;
+    margin-left: 0px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  header {
+    height: 50px;
+  }
+  header img {
+    width: 60px;
+    margin-left: 0px;
   }
 }

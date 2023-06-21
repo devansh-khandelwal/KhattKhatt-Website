@@ -1,0 +1,15 @@
+/* Media Queries */
+
+@media screen and (max-width: 1200px) {
+}
+
+@media screen and (max-width: 768px) {
+}
+
+@media screen and (max-width: 576px) {
+  .tentsCard {
+    max-width: 85% !important;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}

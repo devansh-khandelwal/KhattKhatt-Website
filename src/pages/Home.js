@@ -17,10 +17,6 @@ const Home = () => {
         </div>
       </Fade>
       <StickyButton />
-      <div className="mainHeading">
-        <h1>Welcome to Major's Camp</h1>
-        <h2>(Ek Shaam Fauj Ke Naam)</h2>
-      </div>
       <div className="body">
         <div className="secondContainer">
           <Fade>

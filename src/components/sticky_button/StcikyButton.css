@@ -17,3 +17,25 @@
   object-fit: cover;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+
+@media screen and (max-width: 576px) {
+  .stickyButton {
+    bottom: 100px !important;
+    right: 15px !important;
+    width: 70px !important;
+    height: 70px !important;
+    border-radius: 50% !important;
+  }
+
+  .stickyButton img {
+    width: 100% !important;
+    height: 100% !important;
+    border-radius: 50% !important;
+  }
+
+  .stickyButton:active {
+    width: 70px !important;
+    height: 70px !important;
+    border-radius: 50% !important;
+  }
+}

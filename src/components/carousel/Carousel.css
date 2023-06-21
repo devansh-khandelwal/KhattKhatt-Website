@@ -1,0 +1,47 @@
+.home .mainHeading {
+  position: absolute;
+  top: 40vh;
+  right: 50%;
+  transform: translateX(50%);
+  font-size: 1.5rem; /* Adjust the font size as needed */
+  color: #023020;
+  font-family: "Rubik", sans-serif;
+  text-align: center;
+}
+
+@media screen and (max-width: 1200px) {
+  .home .mainHeading {
+    right: 200px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .home .mainHeading {
+    top: 30vh;
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .carousel {
+    height: 50vh;
+  }
+
+  .home .mainHeading {
+    top: 30vh;
+    right: 50px;
+    font-size: large;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .carousel {
+    height: 30vh;
+  }
+
+  .home .mainHeading {
+    top: 9vh;
+    font-size: 0.6rem;
+    right: 50%;
+  }
+}

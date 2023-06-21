@@ -21,22 +21,12 @@ const content1 = () => {
       <li>Capacity - 1 Adult</li>
       <li>Sleeping Bag</li>
       <li>
-        Meals Included: (Tea& Snacks, Barbeq ue, Dinner, Morning Te a &
+        Meals Included: (Tea & Snacks, Barbeque, Dinner, Morning Tea &
         Breakfast)
       </li>
       <li>Hot Water Availability</li>
       <li>Parking</li>
       <li>Bring your own toiletries</li>
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
     </>
   );
 };
@@ -57,13 +47,6 @@ const content2 = () => {
       <li>Hot Water Availability</li>
       <li>Parking</li>
       <li>Bring your own toiletries</li>
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
     </>
   );
 };
@@ -77,20 +60,12 @@ const content3 = () => {
       <li>Camouflaged seating area</li>
       <li>Twin Size Mattress</li>
       <li>
-        Meals Included: (Tea & Snacks, Barbequ e, Dinner, Morning Tea &
+        Meals Included: (Tea & Snacks, Barbeque, Dinner, Morning Tea &
         Breakfast)
       </li>
       <li>Hot Water Availability</li>
       <li>Parking</li>
       <li>Bring your own toiletries</li>
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
     </>
   );
 };
@@ -105,19 +80,12 @@ const content4 = () => {
       <li>Camouflaged seating area</li>
       <li>Twin Size Mattress</li>
       <li>
-        Meals Included: (Tea & Snacks, Barbeq ue, Dinner Morning Te a &
-        Breakfast)
+        Meals Included: (Tea & Snacks, Barbeque, Dinner Morning Tea & Breakfast)
       </li>
       <li>Individual Restroom</li>
       <li>Hot Water Availability</li>
       <li>Parking</li>
       <li>Bring your own toiletries</li>
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
     </>
   );
 };
