@@ -31,7 +31,7 @@
 
 .about .paragraph .image img {
   border-radius: 10%;
-  width: 80%;
+  width: 70%;
 }
 
 .about .paragraph .text {
@@ -67,10 +67,36 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 577px) and (max-width: 1200px) {
+  .about .paragraph {
+    flex-direction: column;
+    margin: 30px;
+  }
+
+  .about .paragraph .image {
+    width: 100%;
+    text-align: center;
+  }
+
+  .about .paragraph .image img {
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  .about .paragraph .text {
+    width: 100%;
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 30px 10px 30px 10px;
+    text-align: left;
+  }
+
+  .aboutImage img {
+    height: 50vh;
+  }
   .about .heading h1 {
-    font-size: 24px;
-    margin: 20px;
+    font-size: 2rem;
+    margin: 15px;
   }
 }
 

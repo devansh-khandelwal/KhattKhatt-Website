@@ -7,6 +7,7 @@ const StickyButton = () => {
     <div>
       <a href="/tents" className="stickyButton">
         <img src={img} alt="my_image" />
+        <span className="buttonText">Book Now</span>
       </a>
     </div>
   );

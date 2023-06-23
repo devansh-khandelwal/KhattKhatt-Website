@@ -10,12 +10,35 @@
   border-radius: 10px;
   object-fit: cover;
 }
+.stickyButton .buttonText {
+  position: absolute;
+  color: #ffcc01;
+  font-size: 1.6rem;
+  font-weight: bolder;
+  bottom: 50%;
+  left: 55%;
+  transform: translate(-50%, 50%);
+  pointer-events: none;
+  z-index: 10;
+}
+.stickyButton:hover .buttonText {
+  display: inline-block;
+}
 .stickyButton :hover {
   width: 140px;
   height: auto;
   border-radius: 10px;
   object-fit: cover;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+@media screen and (min-width: 577px) and (max-width: 1200px) {
+  .stickyButton img {
+    width: 150px;
+  }
+  .stickyButton :hover {
+    width: 150px;
+  }
 }
 
 @media screen and (max-width: 576px) {
@@ -25,6 +48,10 @@
     width: 70px !important;
     height: 70px !important;
     border-radius: 50% !important;
+  }
+
+  .stickyButton .buttonText {
+    font-size: 1.2rem;
   }
 
   .stickyButton img {

@@ -22,15 +22,39 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 769px) and (max-width: 1200px) {
   .carousel {
-    height: 50vh;
+    height: 30vh !important;
+  }
+
+  .carouselBody {
+    width: 100% !important;
+    height: auto !important;
+    object-fit: contain !important;
   }
 
   .home .mainHeading {
-    top: 30vh;
-    right: 50px;
-    font-size: large;
+    top: 40%;
+    font-size: 1rem;
+    right: 50%;
+  }
+}
+
+@media screen and (min-width: 577px) and (max-width: 768px) {
+  .carousel {
+    height: 35vh !important;
+  }
+
+  .carouselBody {
+    width: 100% !important;
+    height: auto !important;
+    object-fit: contain !important;
+  }
+
+  .home .mainHeading {
+    top: 40%;
+    font-size: 1rem;
+    right: 50%;
   }
 }
 

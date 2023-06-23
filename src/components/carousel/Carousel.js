@@ -13,7 +13,7 @@ var Carousel = require("react-responsive-carousel").Carousel;
 
 function DemoCarousel() {
   return (
-    <>
+    <div className="carouselBody">
       <Carousel
         showArrows={false}
         autoPlay={true}
@@ -43,9 +43,9 @@ function DemoCarousel() {
       </Carousel>
       <div className="mainHeading">
         <h1>Welcome to Major's Camp</h1>
-        <h2>(Ek Shaam Fauj Ke Naam)</h2>
+        <h2>Ek Shaam Fauj Ke Naam</h2>
       </div>
-    </>
+    </div>
   );
 }
 

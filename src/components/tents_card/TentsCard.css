@@ -1,9 +1,11 @@
 /* Media Queries */
 
-@media screen and (max-width: 1200px) {
-}
-
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 577px) and (max-width: 1200px) {
+  .tentsCard {
+    max-width: 45% !important;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
 }
 
 @media screen and (max-width: 576px) {

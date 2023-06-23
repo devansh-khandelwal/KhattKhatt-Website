@@ -13,8 +13,8 @@ export default function ActionAreaCard({ img, title, text }) {
         margin: "15px",
         background: "rgba(164,170,136,0.2)",
         display: "flex",
-        flexDirection: "column", // Display children in a column
-        alignItems: "center", // Center align horizontally
+        flexDirection: "column",
+        alignItems: "center",
       }}
     >
       <CardActionArea

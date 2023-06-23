@@ -16,6 +16,15 @@
   margin: 10px;
 }
 
+@media screen and (min-width: 577px) and (max-width: 1200px) {
+  .foo {
+    margin: 30px 10px 30px 10px !important;
+  }
+  .foo img {
+    width: 50% !important;
+  }
+}
+
 @media screen and (max-width: 576px) {
   .foo {
     margin: 15px 5px 30px 5px !important;

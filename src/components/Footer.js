@@ -58,8 +58,7 @@ export default function Contact(props) {
     "contact2-desc3": "Help@majorscamp.com",
     contact3: "Social Media",
     contact4: "Phone",
-    "contact4-desc1": "+91 6362147935",
-    "contact4-desc2": "+91 9155607067",
+    "contact4-desc": "+91 9155607067",
     ...props.content,
   };
 
@@ -71,7 +70,7 @@ export default function Contact(props) {
       }}
       className="footerCard"
     >
-      <Container maxWidth="lg">
+      <Container maxWidth="lg" className="container">
         <Box py={5}>
           <Grid container spacing={0}>
             <Grid item xs={12} md={4}>
@@ -207,16 +206,7 @@ export default function Contact(props) {
                     color="textSecondary"
                     style={{ textDecoration: "none" }}
                   >
-                    {content["contact4-desc1"]}
-                  </Link>
-                  <br />
-                  <Link
-                    href="tel:9155607067"
-                    variant="body2"
-                    color="textSecondary"
-                    style={{ textDecoration: "none" }}
-                  >
-                    {content["contact4-desc1"]}
+                    {content["contact4-desc"]}
                   </Link>
                 </Box>
               </Box>
