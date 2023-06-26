@@ -17,6 +17,7 @@ import RoomIcon from "@material-ui/icons/Room";
 import PhoneIcon from "@material-ui/icons/Phone";
 import EmailIcon from "@material-ui/icons/Email";
 import WebAssetIcon from "@material-ui/icons/WebAsset";
+import img from "../assets/logo/logo1_without_bg.png";
 
 import "./Footer.css";
 
@@ -45,23 +46,6 @@ const theme = createTheme({
 export default function Contact(props) {
   const classes = useStyles();
 
-  const content = {
-    header: "Lorem ipsum dolor sit amet",
-    description:
-      "Suspendisse aliquam tellus ante, porttitor mattis diam eleifend quis. Pellentesque pulvinar commodo eros sit amet finibus. Aenean et ornare erat.",
-    contact1: "Address",
-    "contact1-desc1": "234, 2nd Cross, Kundahalli,",
-    "contact1-desc2": "ITPL main Road, Bangalore 560037",
-    contact2: "Email",
-    "contact2-desc1": "customercare@majorscamp.com",
-    "contact2-desc2": "Booking@majorscamp.com",
-    "contact2-desc3": "Help@majorscamp.com",
-    contact3: "Social Media",
-    contact4: "Phone",
-    "contact4-desc": "+91 9155607067",
-    ...props.content,
-  };
-
   return (
     <Card
       style={{
@@ -73,22 +57,10 @@ export default function Contact(props) {
       <Container maxWidth="lg" className="container">
         <Box py={5}>
           <Grid container spacing={0}>
-            <Grid item xs={12} md={4}>
-              <Typography
-                variant="h6"
-                component="h2"
-                gutterBottom={true}
-                style={{ fontWeight: "bold", color: "#023020" }}
-              >
-                {content["header"]}
-              </Typography>
-              <Typography
-                variant="subtitle1"
-                color="textSecondary"
-                paragraph={true}
-              >
-                {content["description"]}
-              </Typography>
+            <Grid item xs={1} md={3} className="footerLogo">
+              <Link href="/">
+                <img src={img} alt="" />
+              </Link>
             </Grid>
             <Grid item xs={12} sm={6} md={4}>
               <div className={classes.midColumn}>
@@ -104,14 +76,17 @@ export default function Contact(props) {
                       gutterBottom={true}
                       style={{ fontWeight: "bold", color: "#023020" }}
                     >
-                      {content["contact1"]}
+                      Address/Link To Reach Major's Camp
                     </Typography>
-                    <Typography variant="body2" color="textSecondary">
-                      {content["contact1-desc1"]}
-                    </Typography>
-                    <Typography variant="body2" color="textSecondary">
-                      {content["contact1-desc2"]}
-                    </Typography>
+                    <Link
+                      style={{ textDecoration: "none" }}
+                      href="https://www.google.com/maps/place/13%C2%B028'13.7%22N+77%C2%B028'09.4%22E/@13.4704832,77.4670845,17z/data=!3m1!4b1!4m4!3m3!8m2!3d13.4704832!4d77.4692732?entry=ttu"
+                    >
+                      <Typography variant="body2" color="textSecondary">
+                        Major's Camp, Imam Ali Road, Alipur Village, Tondebhavi,
+                        Hobli,Gauribednur Taluka, Alipura, Karnataka - 561213
+                      </Typography>
+                    </Link>
                   </Box>
                 </Box>
                 <Box display="flex">
@@ -126,33 +101,15 @@ export default function Contact(props) {
                       gutterBottom={true}
                       style={{ fontWeight: "bold", color: "#023020" }}
                     >
-                      {content["contact2"]}
+                      Email
                     </Typography>
                     <Link
-                      href="mailto:customercare@majorscamp.com"
+                      href="mailto:Info@majorscamp.com"
                       variant="body2"
                       color="textSecondary"
                       style={{ textDecoration: "none" }}
                     >
-                      {content["contact2-desc1"]}
-                    </Link>
-                    <br />
-                    <Link
-                      href="mailto:Booking@majorscamp.com"
-                      variant="body2"
-                      color="textSecondary"
-                      style={{ textDecoration: "none" }}
-                    >
-                      {content["contact2-desc2"]}
-                    </Link>
-                    <br />
-                    <Link
-                      href="mailto:Help@majorscamp.com"
-                      variant="body2"
-                      color="textSecondary"
-                      style={{ textDecoration: "none" }}
-                    >
-                      {content["contact2-desc3"]}
+                      Info@majorscamp.com
                     </Link>
                   </Box>
                 </Box>
@@ -171,7 +128,7 @@ export default function Contact(props) {
                     gutterBottom={true}
                     style={{ fontWeight: "bold", color: "#023020" }}
                   >
-                    {content["contact3"]}
+                    Social Media
                   </Typography>
                   <ThemeProvider theme={theme}>
                     <IconButton href="#" color="primary">
@@ -198,15 +155,15 @@ export default function Contact(props) {
                     gutterBottom={true}
                     style={{ fontWeight: "bold", color: "#023020" }}
                   >
-                    {content["contact4"]}
+                    Phone
                   </Typography>
                   <Link
-                    href="tel:6362147935"
+                    href="tel:9599962165"
                     variant="body2"
                     color="textSecondary"
                     style={{ textDecoration: "none" }}
                   >
-                    {content["contact4-desc"]}
+                    +91 9599962165
                   </Link>
                 </Box>
               </Box>

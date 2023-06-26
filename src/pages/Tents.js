@@ -142,7 +142,7 @@ const Tents = () => {
           />
           <TentsCard
             img={img1}
-            title="Lion Hut (3500 per person)"
+            title="Cheetah's Hut (3500 per person)"
             content={content5}
           />
         </div>

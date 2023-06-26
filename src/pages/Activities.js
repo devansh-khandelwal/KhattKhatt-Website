@@ -53,11 +53,6 @@ const Activities = () => {
       text: "Learn more in Detail about CROPS",
     },
     {
-      title: "Light & Sound Show",
-      img: "https://haryanatourism.gov.in/WriteReadData/mediafiles/image/jyotisar_pic11.jpg",
-      text: "Get Ready for the SURPRISE!!",
-    },
-    {
       title: "Army Themed Museum (Included)",
       img: "https://previews.123rf.com/images/lestertair/lestertair1708/lestertair170801077/85151528-budapest-hungary-22-august-2017-museum-of-the-history-of-the-military-of-the-hungarian-army-with.jpg",
       text: "Because Knowledge makes everyone Wiser",

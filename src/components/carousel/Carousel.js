@@ -2,7 +2,7 @@
 import styles from "react-responsive-carousel/lib/styles/carousel.min.css";
 import "./Carousel.css";
 import img1 from "../../assets/cropped_images/img18-cropped.jpg";
-import img2 from "../../assets/images/img6.jpeg";
+import img2 from "../../assets/images/img23.jpeg";
 import img3 from "../../assets/cropped_images/img12-cropped.jpg";
 import img4 from "../../assets/cropped_images/img19-cropped.jpg";
 import img5 from "../../assets/cropped_images/img16-cropped.jpg";
