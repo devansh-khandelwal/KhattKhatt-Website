@@ -87,6 +87,18 @@ export default function Contact(props) {
                         Hobli,Gauribednur Taluka, Alipura, Karnataka - 561213
                       </Typography>
                     </Link>
+                    <Link
+                      style={{ textDecoration: "none" }}
+                      href="https://majorscamp.com"
+                    >
+                      <Typography
+                        variant="body2"
+                        color="textSecondary"
+                        style={{ marginTop: "10px" }}
+                      >
+                        www.majorscamp.com
+                      </Typography>
+                    </Link>
                   </Box>
                 </Box>
                 <Box display="flex">

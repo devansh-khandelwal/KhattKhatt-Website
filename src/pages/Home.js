@@ -22,7 +22,7 @@ const Home = () => {
         <div className="firstContainer">
           <Fade>
             <div className="heading">
-              <h1>Martyr's Ki Mitti</h1>
+              <h1>Martyrs Ki Mitti</h1>
             </div>
             <div className="firstParagraph">
               <div className="image">
@@ -30,11 +30,11 @@ const Home = () => {
               </div>
               <div className="text">
                 <li>
-                  The Kalash contains Mitti from more than 200 Martyr's Homeland
+                  The Kalash contains Mitti from more than 200 Martyrs Homeland
                 </li>
                 <li>
                   Major's Camp is making it possible to give our Tribute to 200
-                  Martyr's at it's Camp.
+                  Martyrs at it's Camp.
                 </li>
               </div>
             </div>
@@ -51,7 +51,7 @@ const Home = () => {
                   As we all know how much Non-defense personnel are fond to know
                   about the complete insights of Army/Defense system. For
                   example, their training, the war insights, life contribution
-                  information, tthe life sacrifices and the Josh towards our
+                  information, the life sacrifices and the Josh towards our
                   country.
                 </li>
                 <li>
@@ -77,14 +77,14 @@ const Home = () => {
               </div>
               <div className="text">
                 <li>
-                  Information of Heroes/Martyr's whose contribution should be
+                  Information of Heroes/Martyrs whose contribution should be
                   known to everyone of us but unfortunately, there isn't any
                   platform.
                 </li>
                 <li>
                   Captain Anuj Nayyar, Colonel Neelakantan Jayachandran Nair,
                   Brigadier Kuldip Singh Chandpuri, Gurbachan Singh Salaria,
-                  Rifleman Jaswant Singh Rawat.
+                  Rifleman Jaswant Singh Rawat and many more.
                 </li>
               </div>
             </div>

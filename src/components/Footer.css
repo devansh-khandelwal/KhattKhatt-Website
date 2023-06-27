@@ -1,21 +1,20 @@
 .footerLogo img {
   width: 80%;
 }
-.footerLogo:hover img {
-  border-radius: 10%;
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 0px 0px 0 rgba(0, 0, 0, 0.19);
-}
+
 @media screen and (min-width: 577px) and (max-width: 1200px) {
   .footerCard {
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
-    text-align: center;
     padding-left: 0px !important;
   }
+
   .footerCard .container {
     width: 80%;
+  }
+
+  .footerLogo {
+    display: none;
   }
 }
 
@@ -25,13 +24,7 @@
   }
 
   .footerLogo {
-    display: flex;
-    justify-content: center;
-    margin-top: -50px !important;
-  }
-
-  .footerLogo img {
-    width: 0%;
+    display: none;
   }
 
   .socialMediaBox {

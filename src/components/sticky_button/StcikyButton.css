@@ -43,11 +43,10 @@
 
 @media screen and (max-width: 576px) {
   .stickyButton {
-    bottom: 100px !important;
+    bottom: 50px !important;
     right: 15px !important;
-    width: 70px !important;
-    height: 70px !important;
-    border-radius: 50% !important;
+    width: 90px !important;
+    height: auto !important;
   }
 
   .stickyButton .buttonText {
@@ -57,12 +56,10 @@
   .stickyButton img {
     width: 100% !important;
     height: 100% !important;
-    border-radius: 50% !important;
   }
 
   .stickyButton:active {
-    width: 70px !important;
-    height: 70px !important;
-    border-radius: 50% !important;
+    width: 90px !important;
+    height: auto !important;
   }
 }
