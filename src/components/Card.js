@@ -24,7 +24,12 @@ export default function ActionAreaCard({ img, title, text }) {
           alignItems: "center",
         }}
       >
-        <CardMedia component="img" height="200" image={img} />
+        <CardMedia
+          component="img"
+          height="200"
+          image={img}
+          sx={{ objectFit: "cover", width: "100%", height: "100%" }}
+        />
         <CardContent>
           <Typography gutterBottom variant="h5" component="div">
             {title}

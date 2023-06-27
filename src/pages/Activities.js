@@ -4,27 +4,33 @@ import ActionAreaCard from "../components/Card";
 import Footer from "../components/Footer";
 import Reveal from "react-reveal/Reveal";
 import StickyButton from "../components/sticky_button/StickyButton";
+import armyDress from "../assets/activities_images/army dress.png";
+import armyThemed from "../assets/activities_images/Army themed.gif";
+import ATV from "../assets/activities_images/ATV.jpg";
+import boat from "../assets/activities_images/boat.jpg";
+import cycle from "../assets/activities_images/cycle_1.jpg";
+import jeep from "../assets/activities_images/jeep.jpg";
 
 const Activities = () => {
   const cardData = [
     {
       title: "Army Themed Games",
-      img: "https://i.pinimg.com/originals/43/aa/e2/43aae200b08373696812d86175d844ff.png",
+      img: armyThemed,
       text: "(Treasure Hunt, Leadership game, Team Spirit, Battlefield war games, etc)",
     },
     {
-      title: "Boat Ride with Floating Snacks (Optional)",
-      img: "https://media.tacdn.com/media/attractions-splice-spp-674x446/0c/09/20/cd.jpg",
-      text: "Food+ Water + Nature makes it more special.",
-    },
-    {
       title: "Cycling (Optional)",
-      img: "https://images.moneycontrol.com/static-mcnews/2021/10/coen-van-de-broek-On4QWhHJCEM-unsplash-1-770x433.jpg?impolicy=website&width=770&height=431",
+      img: cycle,
       text: "Let's feel like a child again.",
     },
     {
+      title: "Boat Ride with Floating Snacks (Optional)",
+      img: boat,
+      text: "Food+ Water + Nature makes it more special.",
+    },
+    {
       title: "ATV (Optional)",
-      img: "https://powersports.honda.com/-/media/products/segment/atv/atv-assets/fourtrax-foreman-rubicon-4x4-750x750.jpg",
+      img: ATV,
       text: "Let's ride in REAL, not just on REEL",
     },
     {
@@ -44,7 +50,7 @@ const Activities = () => {
     },
     {
       title: "Site Seeing on Jeep (Optional)",
-      img: "https://images.thrillophilia.com/image/upload/s--JdeYuJKr--/c_fill,h_775,q_auto,w_1600/f_auto,fl_strip_profile/v1/images/photos/000/141/945/original/1548405028_shutterstock_1083558866.jpg.jpg?1548405028",
+      img: jeep,
       text: "Beautiful Site on a Beautiful Camouflaged JEEP",
     },
     {
@@ -59,7 +65,7 @@ const Activities = () => {
     },
     {
       title: "Dress like a Soldier (Optional)",
-      img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxpEkXUHuJGD14CN4j4bxAULPlTlUL-obQW_dImayFew&usqp=CAU&ec=48665699",
+      img: armyDress,
       text: "The feeling of a Soldier gets REAL with the Dress",
     },
     {

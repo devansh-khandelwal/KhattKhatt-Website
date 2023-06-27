@@ -23,12 +23,10 @@
   flex-direction: row;
   width: 95%;
   margin: 2.5%;
-  /* border: 1px solid red; */
 }
 .about .paragraph .image {
   width: 50%;
   text-align: center;
-  /* border: 1px solid green; */
   padding-top: 30px;
 }
 
@@ -74,6 +72,7 @@
   .about .paragraph {
     flex-direction: column;
     margin: 30px;
+    align-items: center;
   }
 
   .about .paragraph .image {
@@ -82,12 +81,12 @@
   }
 
   .about .paragraph .image img {
-    width: 60%;
+    width: 70%;
     margin: 0 auto;
   }
 
   .about .paragraph .text {
-    width: 100%;
+    width: 70%;
     font-size: 1.2rem;
     text-align: center;
     padding: 30px 10px 30px 10px;
@@ -114,6 +113,8 @@
 
   .about .paragraph {
     margin: 10px;
+    display: flex;
+    align-items: center;
   }
 
   .about .paragraph .image img {
@@ -123,5 +124,7 @@
   .about .paragraph .text {
     font-size: 0.8rem;
     padding: 30px 10px 30px 10px;
+    text-align: left !important;
+    width: 80%;
   }
 }
