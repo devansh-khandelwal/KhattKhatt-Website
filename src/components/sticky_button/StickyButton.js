@@ -1,6 +1,6 @@
 import React from "react";
 import "./StcikyButton.css";
-import img from "../../assets/logo/logo4.png";
+import img from "../../assets/logo/logo6.png";
 
 const StickyButton = () => {
   return (
