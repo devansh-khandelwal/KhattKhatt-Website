@@ -2,7 +2,7 @@ import React from "react";
 import "../styles/Activities.css";
 import ActionAreaCard from "../components/Card";
 import Footer from "../components/Footer";
-import Reveal from "react-reveal/Reveal";
+import Fade from "react-reveal/Fade";
 import StickyButton from "../components/sticky_button/StickyButton";
 import armyDress from "../assets/activities_images/army dress.png";
 import armyThemed from "../assets/activities_images/Army themed.gif";
@@ -87,7 +87,7 @@ const Activities = () => {
         {rows.map((row, rowIndex) => (
           <div key={rowIndex} className="row">
             {row.map((card, cardIndex) => (
-              <Reveal bottom>
+              <Fade>
                 <div key={cardIndex} className="card-wrapper">
                   <ActionAreaCard
                     title={card.title}
@@ -95,7 +95,7 @@ const Activities = () => {
                     text={card.text}
                   />
                 </div>
-              </Reveal>
+              </Fade>
             ))}
           </div>
         ))}

@@ -10,7 +10,7 @@ import IconButton from "@material-ui/core/IconButton";
 import { Link } from "@mui/material";
 import { createTheme } from "@mui/material/styles";
 import FacebookIcon from "@material-ui/icons/Facebook";
-import TwitterIcon from "@material-ui/icons/Twitter";
+import InstagramIcon from "@material-ui/icons/Instagram";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import Avatar from "@material-ui/core/Avatar";
 import RoomIcon from "@material-ui/icons/Room";
@@ -143,13 +143,22 @@ export default function Contact(props) {
                     Social Media
                   </Typography>
                   <ThemeProvider theme={theme}>
-                    <IconButton href="#" color="primary">
+                    <IconButton
+                      href="https://www.facebook.com/profile.php?id=100093842480289&sk=about"
+                      color="primary"
+                    >
                       <FacebookIcon />
                     </IconButton>
-                    <IconButton href="#" color="primary">
-                      <TwitterIcon />
+                    <IconButton
+                      href="https://www.instagram.com/majorscamp/"
+                      color="primary"
+                    >
+                      <InstagramIcon />
                     </IconButton>
-                    <IconButton href="#" color="primary">
+                    <IconButton
+                      href="http://linkedin.com/in/major-s-camp-994815282"
+                      color="primary"
+                    >
                       <LinkedInIcon />
                     </IconButton>
                   </ThemeProvider>

@@ -1,4 +1,4 @@
-import * as React from "react";
+import React, { useEffect, useRef } from "react";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
@@ -7,7 +7,27 @@ import { CardActionArea, CardActions } from "@mui/material";
 
 import "./TentsCard.css";
 
-export default function TentsCard({ img, title, content }) {
+export default function TentsCard({ img, title, content, Link, Attribute }) {
+  const formRef = useRef(null);
+
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.src = Link;
+    script.setAttribute("data-payment_button_id", Attribute);
+    script.async = true;
+
+    const formElement = formRef.current;
+    if (formElement) {
+      formElement.appendChild(script);
+    }
+
+    return () => {
+      if (formElement) {
+        formElement.removeChild(script);
+      }
+    };
+  }, [Link, Attribute]);
+
   return (
     <Card
       sx={{
@@ -15,14 +35,14 @@ export default function TentsCard({ img, title, content }) {
         height: "auto",
         display: "flex",
         flexDirection: "column",
-        justifyContent: "space-between", // Adjust vertical spacing
+        justifyContent: "space-between",
       }}
       style={{
         marginRight: "10px",
         marginLeft: "10px",
         background: "rgba(164,170,136,0.2)",
         display: "flex",
-        flexDirection: "column", // Display children in a column
+        flexDirection: "column",
         alignItems: "center",
       }}
       className="tentsCard"
@@ -50,33 +70,9 @@ export default function TentsCard({ img, title, content }) {
         </CardContent>
       </CardActionArea>
       <CardActions sx={{ justifyContent: "center", paddingBottom: "10px" }}>
-        <button
-          style={{
-            padding: "8px 16px",
-            backgroundColor: "#1976d2",
-            color: "white",
-            border: "none",
-            borderRadius: "4px",
-            cursor: "pointer",
-            transition: "background-color 0.3s",
-          }}
-          // Hover state
-          onMouseOver={(e) => {
-            e.target.style.backgroundColor = "#1565c0";
-          }}
-          onMouseOut={(e) => {
-            e.target.style.backgroundColor = "#1976d2";
-          }}
-          // Active state
-          onMouseDown={(e) => {
-            e.target.style.backgroundColor = "#0d47a1";
-          }}
-          onMouseUp={(e) => {
-            e.target.style.backgroundColor = "#1565c0";
-          }}
-        >
-          Book Now
-        </button>
+        <form ref={formRef}>
+          <div id="razorpay-button-container"></div>
+        </form>
       </CardActions>
     </Card>
   );

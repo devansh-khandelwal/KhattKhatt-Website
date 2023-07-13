@@ -5,13 +5,15 @@ import TentsCard from "../components/tents_card/TentsCard";
 import Fade from "react-reveal/Fade";
 
 const img1 =
-  "https://akm-img-a-in.tosshub.com/indiatoday/images/story/201507/tree-house-story_647_071315064353.jpg?VersionId=bvq.uOokchcak3MXKMW.Czy5CfwGkKe1";
+  "https://media.istockphoto.com/id/614333886/photo/illuminated-green-tent-under-stars-at-night-forest.jpg?s=612x612&w=0&k=20&c=82MnAs8eS6LfVwY9zmphCpZdSZHFSoPB6nh07BtZ-oo=";
 const img2 =
   "https://cdn1.goibibo.com/voy_ing/t_g/f1b0aba896d511eb878d0242ac110003.jpg?downsize=431:230";
 const img3 =
   "https://r1imghtlak.mmtcdn.com/183c8346535511ecadf70a58a9feac02.png?&output-quality=75&downsize=910:612&crop=910:612;0,49&output-format=jpg";
 const img4 =
   "https://cdn.trendhunterstatic.com/thumbs/swag-tent.jpeg?auto=webp";
+const img5 =
+  "https://akm-img-a-in.tosshub.com/indiatoday/images/story/201507/tree-house-story_647_071315064353.jpg?VersionId=bvq.uOokchcak3MXKMW.Czy5CfwGkKe1";
 
 const content1 = () => {
   return (
@@ -124,26 +126,36 @@ const Tents = () => {
             img={img1}
             title="Wolf Tent (1500 per person)"
             content={content1}
+            Link="https://checkout.razorpay.com/v1/payment-button.js"
+            Attribute="pl_M9YqghBG16nOUU"
           />
           <TentsCard
             img={img2}
             title="Leopard Tent (2000 per person)"
             content={content2}
+            Link="https://checkout.razorpay.com/v1/payment-button.js"
+            Attribute="pl_MCZPI6rPAxHosF"
           />
           <TentsCard
             img={img3}
             title="Tiger Tent (2600 per person)"
             content={content3}
+            Link="https://checkout.razorpay.com/v1/payment-button.js"
+            Attribute="pl_MCZmKsbVlehoCT"
           />
           <TentsCard
             img={img4}
             title="Panther Tent (3000 per person)"
             content={content4}
+            Link="https://checkout.razorpay.com/v1/payment-button.js"
+            Attribute="pl_MCZotALPOwMZwR"
           />
           <TentsCard
-            img={img1}
-            title="Cheetah's Hut (3500 per person)"
+            img={img5}
+            title="Cheetah Hut (3500 per person)"
             content={content5}
+            Link="https://checkout.razorpay.com/v1/payment-button.js"
+            Attribute="pl_MCZrOiKJE7MG3z"
           />
         </div>
       </Fade>
